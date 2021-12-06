@@ -37,13 +37,14 @@ export default function MySwitcher() {
 
   // ------------------------
   return (
-    // ------------------------ 4 ways to use
+    // ------------------------ 6 ways to render
     <div>
-      <OnOff isOn={isOn} />
+      {/* <OnOff isOn={isOn} /> */}
       {/* {message} */}
       {/* {msg()} */}
       {/* <msg /> */}
       {/* {msg}  */}
+      {isOn ? <OnMsg /> : <OffMsg />}
       <hr />
       <button onClick={onClickHandler} aria-pressed={isOn}>
         Switch On/Off
